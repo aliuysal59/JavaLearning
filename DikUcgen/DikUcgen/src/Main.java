@@ -1,19 +1,15 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
-        int a, b, c;
-        double d;
+        int a, b;
+        double c;
 
         Scanner girisler = new Scanner(System.in);
         System.out.print("1.Kenarı Giriniz: ");
         a = girisler.nextInt();
         System.out.print("2.Kenarı Giriniz: ");
         b = girisler.nextInt();
-        System.out.print("3.Kenarı Giriniz: ");
-        c = girisler.nextInt();
-
-        d = (a+b+c)/2;
-        System.out.print("Ucgenin Alanı:" +d);
-
+        c = Math.sqrt((a*a) + (b*b));
+        System.out.print("Hipotenus :" +c);
     }
 }
