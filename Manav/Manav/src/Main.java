@@ -1,39 +1,38 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
-        double armut, elma, domates, muz, patlican ,toplam;
-        armut = 2.14;
-        elma = 3.67;
-        domates = 1.11;
-        muz = 0.95;
-        patlican = 5.00;
-
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Armut Kaç Kilo:");
-        double fiyatArmut = input.nextDouble();
-        System.out.print("Elma Kaç kilo:");
-        double fiyatElma = input.nextDouble();
-        System.out.print("Domates Kaç Kilo:");
-        double fiyatDomates = input.nextDouble();
-        System.out.print("Muz Kaç Kilo:");
-        double fiyatMuz = input.nextDouble();
-        System.out.print("Patlican Kaç Kilo:");
-        double fiyatPatlican = input.nextDouble();
-
-        fiyatArmut = armut*fiyatArmut;
-        fiyatElma = elma*fiyatElma;
-        fiyatDomates = domates*fiyatDomates;
-        fiyatMuz = muz*fiyatMuz;
-        fiyatPatlican = patlican*fiyatPatlican;
-        toplam = (fiyatArmut+ fiyatElma + fiyatDomates + fiyatMuz + fiyatPatlican);
-
-        System.out.println("Toplam Tutar :"+toplam);
-        System.out.print("Bizi tercih ettiğiniz için teşekkürler.");
+        double armut = 2.14,
+                elma = 3.67,
+                domates = 1.11,
+                muz = 0.95,
+                patlican = 5.00;
+        double armutKg, elmaKg, domatesKg, muzKg, patlicanKg;
+        double sonuc;
 
 
+        Scanner girdi = new Scanner(System.in);
+        System.out.println("--------------------------------------------");
+        System.out.println("MANAV ALISVERISI HESAPLAMA PROGRAMI");
+        System.out.println("--------------------------------------------");
+        System.out.print("Armut KG giriniz...........:");
+        armutKg = girdi.nextInt();
+        System.out.print("Elma KG giriniz............:");
+        elmaKg = girdi.nextInt();
+        System.out.print("Domates KG giriniz..........:");
+        domatesKg = girdi.nextInt();
+        System.out.print("Muz KG giriniz..............:");
+        muzKg = girdi.nextInt();
+        System.out.print("Patlican KG giriniz.........:");
+        patlicanKg = girdi.nextInt();
+
+        sonuc = (armutKg*armut) + (elmaKg*elma) + (domatesKg*domates) + (muzKg*muz) + (patlicanKg*patlican);
+
+        System.out.println("--------------------------------------------");
+        System.out.println("Toplam Ödeyeceğiniz Tutar.....:" + sonuc);
+        System.out.print("--------------------------------------------");
 
 
     }
+
 }
